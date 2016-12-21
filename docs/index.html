@@ -8,12 +8,12 @@
     <link href="dist/css/bootstrap.css">
     <script>
         $(function() {
-             $("#look").click(function() {
-                 alert("123")
-            $.post("Java.html", function(html) {
-              alert(html)
+            alert("js起效")
+            $("#look").click(function(){
+                $.post("Java.html",function(html){
+                    alert(html)
+                },"html")
             })
-          })
         })
     </script>
 </head>
