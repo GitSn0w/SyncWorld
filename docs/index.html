@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>SyncWorld</title>
     <script src="JS/JQuery.min.js"></script>
+    <script src="dist/js/bootstrap.js"></script>
+    <link href="dist/css/bootstrap.css">
     <script>
-    $(function(){
-      alert("jquery")
-    })
+        $(function() {
+             $("#look").click(function() {
+            $.post("Java.html", function(html) {
+              alert(html)
+            })
+          })
+        })
     </script>
-  </head>
-  <html>
-    <a href="Java.html">java</a>
-  </html>
+</head>
+<html>
+<button id="look" class="btn btn-sm"> 查找java</button>
+
 </html>
