@@ -10,7 +10,7 @@
         $(function() {
             alert("js起效")
             $("#look").click(function(){
-                $.post("https://gitsn0w.github.io/SyncWorld/Java.html",function(html){
+                $.get("https://gitsn0w.github.io/SyncWorld/Java.html",function(html){
                     alert(html)
                 },"html")
             })
